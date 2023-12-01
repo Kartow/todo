@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+#dark_mode_btn{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    top: 0;
+    right: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+#dark_mode_btn:hover{
+    transform: translateY(10px);
+}
+
+#dark_mode_btn>img{
+    max-width: 100%;
+}
+
+.header{
+    height: 200px;
+    margin: 20px 0;
+    gap: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#logo{
+    max-height: 70%;
+}
+
+main{
+    width: 75vw;
+}
+
+#input_container{
+    border-bottom: solid white 1px;
+    width: 40%;
+    height: 30px;
+}
+
+#text_input{
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    vertical-align: bottom;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+}
+
+#input_container>button{
+    max-height: 100%;
+    aspect-ratio: 1 / 1;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#input_img{
+    max-height: 90%;
+    transition: .3s ease-in-out;
+}
+
+#input_img:hover{
+    transform:translateX(5px);
+}
+
+#list_container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+ul{
+    width: 100%;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin: 5px 0;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+.li_btn_div{
+    width: 20%;
+    display: flex;
+    gap: 10%;
+}
+
+.li_btn{
+    width: 45%;
+    aspect-ratio: 1 / 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.li_btn:hover{
+    transform:translateY(5px);
+}
+
+.li_btn>img{
+    width: 60%;
+}
+
+@media screen and (max-width: 400px) {
+    #dark_mode_btn{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #input_container, #list_container{
+        width: 90%;
+    }
+}

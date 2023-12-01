@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-do list</title>
+</head>
+<body onload="modeSet()">
+    <button id="dark_mode_btn" onclick="modeButtonClicked()"><img id="btn_img" src="IMG/mode_white.png"></button>
+
+    <div class="header flex-center column">
+        <img id="logo" src="IMG/logo_white.png" alt="logo">
+        <p>To do list</p>
+    </div>
+
+    <main class="flex-center column">
+        <div id="list_container" class="flex-center">
+            <ul id="list"></ul>
+        </div>
+
+        <div id="input_container" class="flex-center">
+            <input id="text_input" type="text" placeholder="Add something">
+            <button onclick="listAppend()"><img src="IMG/send_white.png" id="input_img"></button>
+        </div>
+    </main>
+    
+    <script src="theme.js"></script>
+    <script src="list.js"></script>
+</body>
+</html>
