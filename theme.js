@@ -5,7 +5,8 @@ function modeChange(which) {
     let input = document.getElementById('text_input');
     let setImg = document.getElementById('input_img');
     let li = document.querySelectorAll('li');
-    let delImg = document.getElementsByClassName('del');
+    let delImg = document.getElementsByClassName('del_img');
+    let doneImg = document.getElementsByClassName('done_img');
     let body = document.body;
 
     if (which === 'dark'){
@@ -17,8 +18,9 @@ function modeChange(which) {
         for (let i = 0; i < li.length; i++){
             li[i].style.borderBottom = 'solid 1px rgba(255, 255, 255, 0.3)';
             delImg[i].src = 'IMG/trash_white.png';
+            doneImg[i].src = 'IMG/done_white.png';
         }
-        body.style.background = 'black';
+        body.style.background = '#080808';
         body.style.color = 'white';
     }
     if (which === 'light'){
@@ -30,6 +32,7 @@ function modeChange(which) {
         for (let i = 0; i < li.length; i++){
             li[i].style.borderBottom = 'solid 1px rgba(0, 0, 0, 0.3)';
             delImg[i].src = 'IMG/trash_black.png';
+            doneImg[i].src = 'IMG/done_black.png';
         }
         body.style.background = 'white';
         body.style.color = 'black';
